@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="../assests/Big_Bull.png">
+        <title>Stock_Market</title>
+        <style>
+            body {padding: 2em;}
+
+            .headerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: tomato;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .footerContainer {
+                display: flex;
+                flex-flow: column wrap;
+                align-content: center;
+                background: lightgreen;
+                font-weight: bold;
+                padding: 10px;
+            }
+
+            .mainContainer {
+                display: flex;
+                flex-flow: row wrap;
+                font-weight: bold;
+                text-align: center;
+            }
+
+            .mainContentItem {
+              text-align: left;
+              background: deepskyblue;
+            }
+
+            article {
+            padding: 10px;
+            margin: 10px;
+            background: aqua;
+            }
+
+            .sideBarLeftItem { background: gold; }
+            .sideBarRightItem { background: hotpink; }
+            
+
+            .sideBarItem { flex: 1 0 0; border: 0px solid green;}
+            .mainContentItem { flex: 3 0px;}
+            .sideBarLeftItem { order: 1;}
+            .mainContentItem { order: 2;}
+            .sideBarRightItem {order: 3;}
+        </style>
+    </head>
+    <body>
+        <header class="headerContainer">
+        <h1><img src="../assests\Big_Bull.png" width="5%">HEADER - Stock Market News</h1></header>
+        <div class="mainContainer">
+          <section class="mainContentItem">
+            <article>
+              <h2>First article</h2>
+
+              <p>On Monday, Dalal Street is likely to see a jittery start to the week. If we take into account the validity of the Head and Shoulder formation
+                 on the daily charts, then the price targets through classical measurement tools fall near the 16600-16700 zone. On the other side, the selling might be
+                overdone for a while and Nifty may try and find a reason to show a technical pullback.</p>
+              <p>The volatility witnessed a massive surge; India VIX spiked by 24.85 per cent to 20.8025. Nifty50 has also closed a notch below 10-DMA which presently
+              stands at 17100. It would be crucial to see if this level is defended by Monday's close.</p>
+            </article>
+            <article>
+              <h2>Second Article</h2>
+              <p>Friday came as a massive negative surprise for the equity markets. With US markets closed due to the Thanksgiving
+              holiday on Thursday, no overnight cues were expected.However, renewed Covid fears gripped the equity markets overnight which saw the Asian markets
+               open with deep cuts and Dalal Street was not an exception.</p>
+          </article>
+          <article>
+              <p>
+              <h2>Third Article</h2>
+              </p>
+              <p>Friday's opening of the Indian markets was somewhat relatively resilient as Nifty50 tried to limit its losses
+              in the first hour of the trade. However, the Indian markets succumbed to global weakness as well. The entire session was
+              gripped under fierce selling pressure as Nifty50 slipped below the 17000-level for a moment. No major recovery was seen from the lower levels and the headline
+              index ended the day with a deep cut of 509.80 points (-2.91 per cent).</p>
+          </article>
+          </section>
+          <sideBar class="sideBarItem sideBarLeftItem"><div class="center">
+              <p>NSE Nifty 50 Index</p>
+              <img src="../assests\Stock_Market_Monday.jpg" alt="Hover Text." width="95%"> 
+              <p>For Monday's session, the levels of 17180 and 17225 will act as potential resistance levels
+                 for Nifty50. The potential supports come in at 16900 and 16780 levels.</p>
+              <p>The Relative Strength Index (RSI) on the daily chart is at 31.24; it shows a bullish divergence against the price.
+                 The daily MACD is bearish and stays below the signal line.</p>   
+            </div></sideBar>
+          <sideBar class="sideBarItem sideBarRightItem"><div class="center">
+              <p>NSE Nifty 50 Index</p>
+            <p>Nifty50 formed a large black-bodied candle on the daily chart,
+               it shows the strong momentum on the downside that persisted during the day.</p>
+            <p>Nifty's price has closed outside the lower Bollinger band. Although this may result in a continuation of the downtrend,
+               looking at other factors that affect the markets, some pullback inside the band cannot be ruled out.</p>
+            <p>Importantly, for the next couple of days, we may see the markets violating technical rules as they are being governed more
+               by fear and knee-jerk reactions to refreshed Covid concerns. We recommend avoiding aggressive shorts and keeping fresh buying
+               limited to only traditionally defensive stocks like pharma, consumption and IT. Any further buying in any of the sectors should be
+               refrained even if a technical pullback occurs as relatable directional cues would be available only after the markets stabilize.
+               A highly cautious view is advised for the day.</p>
+            </div></sideBar>
+        </div>
+        <footer class="footerContainer"><strong>Altamash Bagwan</strong></footer>
+    </body>
+    
+</html>
